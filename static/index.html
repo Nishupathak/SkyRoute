@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SkyRoute</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main>
+        <h1>✈️ SkyRoute</h1>
+        <p class="sub">Find the fewest stops, cheapest or fastest flight route.</p>
+
+        <label class="find">Quick find airport <input id="find" type="text" placeholder="Try: ch, del, go" autocomplete="off"></label>
+<ul id="suggestions"></ul>
+
+        <form id="form">
+            <label>From <select id="from"></select></label>
+            <label>To <select id="to"></select></label>
+            <label>Mode
+                <select id="mode">
+                    <option value="cheapest">Cheapest</option>
+                    <option value="fastest">Fastest</option>
+                    <option value="fewest">Fewest stops</option>
+                </select>
+            </label>
+            <button type="submit">Search</button>
+        </form>
+
+        <section id="result" aria-live="polite"></section>
+
+        <h2>Recent searches</h2>
+        <ul id="history"></ul>
+    </main>
+    <script src="/static/app.js"></script>
+</body>
+</html>

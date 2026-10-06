@@ -1,0 +1,16 @@
+:root { --bg: #eef3f8; --fg: #14202e; --card: #ffffff; --accent: #3a86c8; --bad: #c0392b; }
+@media (prefers-color-scheme: dark) {
+    :root { --bg: #0e141c; --fg: #e8eef5; --card: #18212c; --accent: #5aa9e6; --bad: #ff7b6b; }
+}
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: system-ui, Arial, sans-serif; }
+main { max-width: 640px; margin: 0 auto; padding: 24px 16px; }
+h1 { margin-bottom: 4px; }
+.sub { margin-top: 0; opacity: 0.8; }
+form { display: flex; flex-wrap: wrap; gap: 12px; background: var(--card); padding: 16px; border-radius: 12px; align-items: end; }
+label { display: flex; flex-direction: column; font-size: 0.85rem; gap: 4px; }
+select, button { padding: 8px 10px; font-size: 1rem; border-radius: 8px; border: 1px solid #8aa0b5; }
+button { background: var(--accent); color: #fff; border: none; cursor: pointer; }
+#result { margin: 20px 0; background: var(--card); padding: 16px; border-radius: 12px; min-height: 24px; }
+.route { font-size: 1.3rem; font-weight: bold; }
+.error { color: var(--bad); }
+li { margin: 4px 0; }
